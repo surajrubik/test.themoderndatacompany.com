@@ -1,0 +1,168 @@
+#Difference .rule {
+  position: relative;
+  margin: 16px 0 24px;
+}
+
+#Difference .rule:after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 0;
+  left: 24px;
+  height: 0;
+  border-top: 1px solid #717981;
+}
+
+#dataos-layers {
+  width: min(95vw, 95vh);
+  height: min(95vw, 95vh);
+  margin: 0 auto;
+  position: relative;
+}
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+#dataos-layers #graphic {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  transform-origin: center center;
+  animation: spin 90s linear infinite;
+}
+
+#dataos-layers h1 {
+  font-size: 80px;
+  font-family: 'Inter', sans-serif;
+  color: #2b333d;
+  position: relative;
+  z-index: 10;
+}
+
+#dataos-layers .panel {
+  position: relative;
+  z-index: 20;
+  padding: 24px;
+  margin: 0 8px 16px;
+  border-radius: 24px;
+  background-color: white;
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.4);
+
+  transform: translate3d(0px, 0px, 0px);
+  opacity: 1;
+  transition: all 600ms ease-in-out;
+}
+
+#dataos-layers .panel h3 {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  font-family: 'Inter', sans-serif;
+  color: #2b333d;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+#dataos-layers .panel p {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2b333d;
+  padding: 0;
+  margin: 0;
+}
+
+#dataos-layers #data-panel:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #cccccc;
+}
+
+#dataos-layers #knowledge-panel:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #97cbcb;
+}
+
+#dataos-layers #activation-panel:after {
+  content: "";
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+  border-radius: 14px;
+  background-color: #e9db91;
+}
+
+
+@media (orientation: landscape) {
+
+  #dataos-layers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #dataos-layers .panel {
+    position: absolute;
+    width: 320px;
+  }
+
+  #dataos-layers #data-panel {
+    top: 5%;
+    right: 10%;
+    transition-delay: 0;
+  }
+
+  #dataos-layers #knowledge-panel {
+    bottom: 5%;
+    right: -5%;
+    transition-delay: 200ms;
+  }
+
+  #dataos-layers #activation-panel {
+    top: 50%;
+    left: -10%;
+    transition-delay: 400ms;
+  }
+
+  #dataos-layers:not(.visible) #data-panel {
+    transform: translate3d(40px, 0, 0);
+    opacity: 0;
+  }
+
+  #dataos-layers:not(.visible) #knowledge-panel {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+
+  #dataos-layers:not(.visible) #activation-panel {
+    transform: translate3d(0, -40px, 0);
+    opacity: 0;
+  }
+}
+
+

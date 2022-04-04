@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="955px" height="931px" viewBox="0 0 955 931" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59 (86127) - https://sketch.com -->
+    <title>hero-color-pattern-left-bg</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="1074" height="931"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hero-color-pattern-left-bg">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Rectangle"></g>
+            <g id="Group" mask="url(#mask-2)">
+                <g transform="translate(-2317.000000, -1480.000000)">
+                    <g transform="translate(0.572000, 0.358000)">
+                        <g id="Path">
+                            <g opacity="0.5" transform="translate(0.000000, 75.336000)">
+                                <g opacity="0.7">
+                                    <polygon fill="#B49A85" transform="translate(2039.996018, 1295.352457) rotate(135.000000) translate(-2039.996018, -1295.352457) " points="1984.90502 2969.64946 2093.20502 2969.58846 2095.08702 -378.944543 1986.79102 -378.883543"></polygon>
+                                    <polygon fill="#F8F8F8" transform="translate(1291.286437, 1401.825243) rotate(135.000000) translate(-1291.286437, -1401.825243) " points="1236.14144 3171.42524 1344.44144 3171.36424 1346.43144 -367.774757 1238.13444 -367.712757"></polygon>
+                                    <polygon fill="#080B14" transform="translate(1893.298777, 1399.880093) rotate(135.000000) translate(-1893.298777, -1399.880093) " points="1838.08978 3283.18909 1946.38978 3283.12909 1948.50778 -483.428907 1840.21078 -483.367907"></polygon>
+                                    <polygon fill="#50B6FF" transform="translate(2228.080972, 1326.529606) rotate(135.000000) translate(-2228.080972, -1326.529606) " points="2202.21597 3025.71811 2252.03197 3025.69011 2253.94597 -372.658894 2204.12997 -372.630894"></polygon>
+                                    <polygon fill="#F8F8F8" transform="translate(1690.151674, 1357.957169) rotate(135.000000) translate(-1690.151674, -1357.957169) " points="1664.24717 3127.53867 1714.06317 3127.51067 1716.05617 -411.624331 1666.24017 -411.596331"></polygon>
+                                    <polygon fill="#F8F8F8" transform="translate(1573.321294, 1355.853747) rotate(135.000000) translate(-1573.321294, -1355.853747) " points="1547.43379 3095.11225 1597.24979 3095.08425 1599.20879 -383.404753 1549.39279 -383.376753"></polygon>
+                                    <polygon fill="#F8F8F8" transform="translate(1356.752564, 1281.859201) rotate(135.000000) translate(-1356.752564, -1281.859201) " points="1330.83806 3068.7677 1380.65406 3068.7397 1382.66706 -505.049299 1332.85006 -505.021299"></polygon>
+                                </g>
+                            </g>
+                            <g transform="translate(1083.749000, 0.000000)">
+                                <g>
+                                    <polygon fill="#F8F8F8" transform="translate(1224.042871, 1266.213396) rotate(45.000000) translate(-1224.042871, -1266.213396) " points="1168.94987 -408.083604 1277.24987 -408.022604 1279.13587 2940.5104 1170.83587 2940.4494"></polygon>
+                                    <polygon fill="#FC5850" transform="translate(1370.740154, 1370.740284) rotate(45.000000) translate(-1370.740154, -1370.740284) " points="1315.52965 -512.568716 1423.82965 -512.507716 1425.95065 3254.04928 1317.65065 3253.98828"></polygon>
+                                    <polygon fill="#FEBF00" transform="translate(1573.886523, 1328.816680) rotate(45.000000) translate(-1573.886523, -1328.816680) " points="1547.98152 -440.76482 1597.79752 -440.73582 1599.79152 3098.39818 1549.97552 3098.37018"></polygon>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

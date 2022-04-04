@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1231" height="833" viewBox="0 0 1231 833">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_197" data-name="Rectangle 197" width="1231" height="833" transform="translate(-7746 3276)" fill="#5a2f2f" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Group_8230" data-name="Group 8230" transform="translate(18 94)">
+    <g id="Mask_Group_41" data-name="Mask Group 41" transform="translate(7728 -3370)" opacity="0.47" clip-path="url(#clip-path)">
+      <g id="assets" transform="translate(-11728.322 1495.937)" opacity="0.491">
+        <g id="pattern-style1" transform="translate(0 0)">
+          <g id="diagonal-45-style1" transform="translate(1063.823 176.348)" opacity="0.5">
+            <g id="Rectangle" transform="translate(4761.202 3542.848) rotate(180)" opacity="0.7">
+              <path id="Path_16414" data-name="Path 16414" d="M141.041,0,2.56.078Z" transform="translate(0 241.865) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16415" data-name="Path 16415" d="M0,4281.916l138.481-.078L140.893,0,2.412.078Z" transform="translate(590.197 422.381) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16416" data-name="Path 16416" d="M0,4525.643l138.481-.078L141.03,0,2.549.078Z" transform="translate(1461.366 200.108) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16417" data-name="Path 16417" d="M0,4816.452l138.481-.077L141.194,0,2.713.078Z" transform="translate(588.688 99.839) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16418" data-name="Path 16418" d="M0,4345.575l63.7-.036L66.149,0,2.448.036Z" transform="translate(353.608 333.581) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16419" data-name="Path 16419" d="M0,4525.6l63.7-.036L66.25,0,2.549.036Z" transform="translate(977.784 229.782) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16420" data-name="Path 16420" d="M0,4448.051l63.7-.037L66.207,0,2.505.036Z" transform="translate(1154.612 259.874) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16421" data-name="Path 16421" d="M0,4569.914l63.7-.036L66.275,0,2.574.036Z" transform="translate(1388.432 311.431) rotate(-45)" fill="#fff" fill-rule="evenodd"/>
+            </g>
+          </g>
+          <g id="diagonal-45-style1-2" data-name="diagonal-45-style1" transform="translate(1859.669 42.751)" opacity="0.7">
+            <g id="Rectangle-2" data-name="Rectangle" transform="translate(0 0)">
+              <path id="Path_16455" data-name="Path 16455" d="M0,0,138.481.078,140.892,4281.9l-138.481-.078Z" transform="translate(3617.968 92.696) rotate(45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16462" data-name="Path 16462" d="M0,0,138.481.078,140.892,4281.9l-138.481-.078Z" transform="translate(4773.968 1204.696) rotate(45)" fill="#fff" fill-rule="evenodd" opacity="0.66"/>
+              <path id="Path_16457" data-name="Path 16457" d="M0,0,138.48.078l2.713,4816.353-138.481-.078Z" transform="translate(3994.433 37.263) rotate(45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16460" data-name="Path 16460" d="M0,0,138.48.078l2.713,4816.353-138.481-.078Z" transform="translate(5150.434 1149.263) rotate(45)" fill="#fff" fill-rule="evenodd" opacity="0.66"/>
+              <path id="Path_16459" data-name="Path 16459" d="M0,0,63.7.036,66.25,4525.58l-63.7-.036Z" transform="translate(4177.867 112.984) rotate(45)" fill="#fff" fill-rule="evenodd"/>
+              <path id="Path_16461" data-name="Path 16461" d="M0,0,63.7.036,66.25,4525.58l-63.7-.036Z" transform="translate(5333.867 1224.984) rotate(45)" fill="#fff" fill-rule="evenodd" opacity="0.66"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

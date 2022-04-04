@@ -1,0 +1,897 @@
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+}
+
+
+/*HEADER*/
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    z-index: 1000;
+    transition: all .3s ease-in-out;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0);
+    line-height: 40px;
+}
+
+.header.active {
+    background: #fff;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    height: 85px;
+}
+
+#bottomNav {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  height:111px;
+}
+
+#OnPageNav{
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  height:55px;
+}
+
+#bottomNav.hide,
+#OnPageNav.hide{
+    opacity: 0;
+    height:0;
+    padding: 0;
+}
+
+
+.logo {
+  z-index: 4;
+  display: inline-block;
+  float: left;
+}
+.header-nav {
+  float: right;
+}
+
+
+.header-nav .btn-light {
+    color: #2B323C;
+    font-size: 15px;
+    padding: 13px 25px;
+    border-color: transparent;
+    background: #fff;
+    height: 50px;
+    transition: all .3s ease-in-out;
+  
+}
+
+.header-nav .btn-menu {
+    width: 50px;
+    padding: 13px 0;
+    margin-left: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.header-nav .btn-light:hover,
+.header-nav .btn-menu:hover {
+  border-color:rgb(255 255 255 / 23%);
+}
+
+.header.active .header-nav .btn-light {
+  background: #DCDEE2;
+  height: 45px;
+  padding: 12px 24px;
+  font-size: 13px;
+}
+
+.header.active .header-nav .btn-menu {
+  background: #DCDEE2;
+  height: 45px;
+  padding: 12px 0;
+  font-size: 13px;
+  width: 45px;
+}
+
+.header.active .header-nav .btn-light:hover,
+.header.active .header-nav .btn-menu:hover {
+  background: #fff;
+  border-color: #DCDEE2;
+  color: #2B323C;
+}
+
+.header .logo #ModernIcon {
+  opacity: 1;
+  transition: all .3s ease-in-out;
+  display: block;
+  height: 42px;
+  width: auto;
+}
+.header .logo #ModernLogo {
+  opacity: 0;
+  transition: all .3s ease-in-out;
+  display: none;
+}
+
+.header.active .logo #ModernIcon {
+  opacity: 0;
+  display: none;
+}
+
+.header.active .logo #ModernLogo {
+  opacity: 1;
+  display: block;
+}
+
+.onpage-nav.nav {
+  float: left;
+  display: none;
+  transition: all .3s ease-in-out;
+}
+
+
+@media only screen and (min-width: 891px) {
+  .header.active .onpage-nav.nav {
+    display: flex;
+  }
+}
+
+
+.fixed-top {
+  z-index: 4444;
+}
+
+#OnPageNav .nav-link,
+.header.active .onpage-nav.nav .nav-link {
+  color: #80848a;
+}
+
+#OnPageNav .nav-link:hover,
+#OnPageNav .active,
+.header.active .onpage-nav.nav .nav-link:hover,
+.header.active .onpage-nav.nav .active{
+  color: #000;
+}
+
+#OnPageNav .active,
+.header.active .onpage-nav.nav .active {
+  font-weight: 600;
+}
+
+
+
+/*FULL SCROLL NAV*/
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  height: 6px;
+  width: 6px;
+  background: #fff;
+  margin: -3px 0 0 -3px;
+  border: 1px solid #2b323ca1;
+}
+
+
+
+
+
+
+/*MODAL NAVIGATION*/
+
+#modalNav .btn-light {
+  border-color: #fff;
+}
+
+#modalNav .modal-content {
+  background-color: #2b333d;
+}
+
+#modalNav .btn-close {
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: #fff;
+  background: none;
+  border: 0;
+  border-radius: 0.25rem;
+  opacity: 1;
+  font-size: 1.5rem;
+  font-weight: 300;
+  position: absolute;
+  right: 28px;
+  top: 21px;
+  z-index: 6;
+}
+
+#modalNav .main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: calc(1rem + 1.5vh);
+  font-weight: 300;
+  margin-bottom: 5px;
+  display: block
+}
+
+#modalNav .main-nav a:hover {
+  text-decoration: underline;
+}
+
+
+/*FULL PAGE HOMEPAGE*/
+
+#introVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  background-color: black;
+  /* in case the video doesn't fit the whole page*/
+  background-position: center center;
+  background-size: contain;
+  object-fit: cover;
+  /*cover video background */
+  z-index: 3;
+  opacity: 1;
+}
+
+
+#section0 {
+  background-color: #2B323C;
+}
+
+
+/* Layer with position absolute in order to have it over the video
+	* --------------------------------------- */
+#section0 .layer {
+  position: absolute;
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  top: 43%;
+}
+
+/*
+		* Preventing flicker on some browsers
+		* See http://stackoverflow.com/a/36671466/1081396  or issue #183
+		*/
+-webkit-transform: translate3d(0, 0, 0);
+-ms-transform: translate3d(0, 0, 0);
+transform: translate3d(0, 0, 0);
+}
+
+/*solves problem with overflowing video in Mac with Chrome */
+#section0 {
+  overflow: hidden;
+}
+
+/* Hiding video controls
+	* See: https://css-tricks.com/custom-controls-in-html5-video-full-screen/
+	* --------------------------------------- */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+#section0 .logo svg {
+  height: 50px;
+}
+
+
+#section2 {
+  background: url(/assets/design/bg/home-slide02-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#section3 {
+  background: url(/assets/design/bg/home-slide03-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#section4 {
+  background: url(/assets/design/bg/home-slide04-bg.jpg) right center no-repeat #F4F5F7;
+  background-size: contain;
+}
+
+#section5 {
+  background: url(/assets/design/bg/home-slide05.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#section6 {
+  background: url(/assets/design/bg/home-slide06-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+#section7 {
+  background-color: #fff;
+}
+
+
+#section4 .border-bottom,
+#section4 .border-top {
+  border-color: #646A72 !important;
+}
+
+
+#section4 .bg-real-time-data {
+  background-color: #f4f5f7bd;
+}
+
+
+
+
+/*TYPOGRAPHY*/
+
+h1,
+.h1 {
+  font-weight: 300;
+}
+
+h2,
+.h2 {
+  font-weight: 300;
+}
+
+h3,
+.h3 {
+  font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+
+  h1,
+  .h1 {
+    font-size: 7rem;
+  }
+
+  h2,
+  .h2 {
+    font-size: 3rem;
+  }
+
+  h3,
+  .h3 {
+    font-size: 2rem;
+  }
+}
+
+h1.display-3 {
+  text-shadow: 0 2px 7px #00000036;
+}
+
+h1.display-2,
+h1.h2 {
+  text-shadow: 0 2px 8px #0000002b;
+}
+
+
+.lead {
+  font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    -moz-transition: color 0.3s, border 0.3s, background 0.3s;
+    -o-transition: color 0.3s, border 0.3s, background 0.3s;
+    -webkit-transition: color 0.3s, border 0.3s, background 0.3s;
+    transition: color 0.3s, border 0.3s, background 0.3s;
+}
+
+a:hover {
+  color: #026ebd;
+}
+
+a.link {
+    color: #212529;
+    text-decoration: underline 2px;
+   
+}
+
+a.underlined {
+  text-decoration: underline;
+}
+
+a.link:hover {
+    color: #323A43;
+    text-decoration: underline 2px;
+   
+}
+
+a.link-dark {
+  color: #323A43;
+  text-decoration: none;
+}
+
+a.link-dark:hover {
+  text-decoration: underline;
+}
+
+a.link-white {
+  color: #fff;
+  text-decoration: none;
+}
+
+a.link-white:hover {
+  text-decoration: underline;
+}
+
+.text-small {
+  font-size: 70%;
+}
+
+.trademark {
+  font-size: 24%;
+  vertical-align: text-top;
+  font-weight: 300;
+  padding-top: 0.5em;
+  display: inline-block;
+}
+
+.text-disabled {
+  opacity: 0.5;
+}
+
+/*BACKGROUNDS*/
+
+.bg-dark {
+  background-color: #2b323c !important;
+}
+
+.bg-gray {
+  background-color: #F4F5F7 !important;
+}
+
+.bg-yellow {
+  background-color: #E9DB91;
+}
+
+.bg-teal {
+  background-color: #97cbcb;
+}
+
+.bg-light {
+  background-color: #EBEEF2;
+}
+
+/*BUTTONS*/
+
+.btn-light {
+  color: #2B323C;
+  font-size: 14px;
+  padding: 14px 24px;
+  border-color: #686e7599;
+  background: #fff;
+}
+
+
+
+.btn-light:hover {
+  background: #2B323C;
+  color: #fff;
+  border-color: #2B323C;
+}
+
+.btn-primary {
+  color: #fff;
+  font-size: 14px;
+  padding: 14px 24px;
+  border-color: #2B323C;
+  background: #2B323C;
+}
+
+.btn-primary:hover {
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.btn-menu {
+  width: 52px;
+  padding: 14px 0;
+  margin-left: 5px;
+}
+
+.btn-outline-dark {
+  font-size: 14px;
+  padding: .5rem 2rem;
+  border-color: #686e7599;
+}
+
+.btn-outline-light {
+  font-size: 14px;
+  padding: .5rem 2rem;
+  border-color: #ffffff5c;
+  color: #2C343E;
+  background: #ffffffc2;
+}
+
+/*LAYOUT*/
+
+
+.hero-full-h {
+    min-height: 100vh;
+    position: relative;
+  }
+
+  .hero-full-h .layer,
+  .hero-half-h .layer{
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  
+  .hero-half-h {
+    height: 50vh;
+    position: relative;
+  }
+ 
+.hero-small-h{
+    height: 30vh;
+    position: relative;
+}
+
+
+/*CAROUSEL*/
+
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 999;
+}
+
+
+/*DATAOS PRODUCT PAGE*/
+
+.dataos {
+  background: url(/assets/design/bg/home-slide03-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.dataos .layer {
+  top: 43% !important;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+#dataos-benefits .carousel-item .layer .col {
+  background-color: #f4f5f7bd;
+}
+
+#dataos-benefits .carousel-item.roi {
+  background: url(/assets/design/bg/roi-bg.jpg) left bottom no-repeat #F4F5F7;
+  background-size: contain;
+}
+
+#dataos-benefits .carousel-item.engineering {
+  background: url(/assets/design/bg/engineering-bg.jpg) left bottom no-repeat #F4F5F7;
+  background-size: contain;
+}
+
+#dataos-benefits .carousel-item.agile {
+  background: url(/assets/design/bg/agile-bg.jpg) left bottom no-repeat #F4F5F7;
+  background-size: contain;
+}
+
+#dataos-benefits .carousel-item.future-proof {
+  background: url(/assets/design/bg/future-proof-bg.jpg) left bottom no-repeat #F4F5F7;
+  background-size: contain;
+}
+
+
+/* PRICING */
+
+.pricing {
+  background: url(/assets/design/bg/home-slide07-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+
+/*SOLUTIONS*/
+
+.solutions {
+  background: url(/assets/design/bg/data-pattern-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+
+
+.solutions.retail {
+  background: url(/assets/design/bg/heros-solution-retail.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.technology {
+  background: url(/assets/design/bg/technology-bg-new.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.customer360 {
+  background: url(/assets/design/bg/roi-bg.jpg) left bottom no-repeat #F4F5F7;
+  background-size: contain;
+}
+
+.solutions.featured-retail-case-study {
+  background: url(/assets/design/bg/featured-retail-case-study.jpg) center center no-repeat #F4F5F7;
+  background-size: cover;
+}
+.solutions.featured-bg-retail-cpg {
+   background: url(/assets/design/bg/retail-and-E-commerce-firm.jpg) center center no-repeat #F4F5F7;
+  background-size: cover; 
+}
+
+.solutions.government {
+  background: url(/assets/design/bg/heros-solution-government.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.distribution {
+  background: url(/assets/design/bg/heros-solution-distribution.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.netzero {
+  background: url(/assets/design/bg/netzero-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.data-stack {
+  background: url(/assets/design/netzero/stack-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.netzero-bottom-block {
+  background: url(/assets/design/netzero/netzero-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.solutions.case-study-distribution {
+  background: url(/assets/design/bg/case-study-distribution.jpg) center center no-repeat #000000;
+  background-size: cover;
+}
+
+.solution-use-case .svg-container img {
+  max-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.solution-use-case .box-tl {
+  border-bottom: 1px solid #404750;
+}
+
+.solution-use-case .box-tr {
+  border-bottom: 1px solid #404750;
+}
+
+.solution-use-case .box-bl {
+  border-bottom: 1px solid #404750;
+}
+
+@media screen and (min-width: 992px) {
+  .solution-use-case .box-tl {
+    border-right: 1px solid #404750;
+  }
+  .solution-use-case .box-bl {
+    border-right: 1px solid #404750;
+    border-bottom: none;
+  }
+}
+
+
+/*RESOURCES*/
+
+
+a.resources-nav-item  {
+    text-decoration: none;
+    color: #000;
+    -moz-transition: color 0.3s, border 0.3s, background 0.3s;
+    -o-transition: color 0.3s, border 0.3s, background 0.3s;
+    -webkit-transition: color 0.3s, border 0.3s, background 0.3s;
+    transition: color 0.3s, border 0.3s, background 0.3s;
+}
+
+
+@media (min-width:890px) {
+  #LearningCenter {
+    margin-top: -111px;
+  }
+}
+
+
+/*BLOG*/
+
+#blog .bottom-cta {
+  background: #fff !important;
+}
+
+.blog.main {
+  background: url(/assets/design/bg/blog-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.dark-bg-overlay{
+  
+    z-index: 2;
+    width: 100%;
+    left: 0;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background: #000;
+    opacity:0.5;
+    
+}
+
+
+/*ABOUT MODERN*/
+.company {
+  background: url(/assets/design/bg/modern-heros-about.png) center center no-repeat;
+  background-size: cover;
+}
+
+.company.numbers {
+  background: url(/assets/design/bg/modern-numbers.png) center center no-repeat;
+  background-size: cover;
+}
+
+.bg.circle {
+    background: url(/assets/design/bg/bg-circle.png) center center no-repeat;
+    width: 70vh;
+    height: 65vh;
+}
+
+.bg.polygon {
+    background: url(/assets/design/bg/bg-polygon.png) center center no-repeat;
+    width: 70vh;
+    height: 65vh;
+
+}
+
+.team {
+  background: url(/assets/design/bg/modern-heros-people.png) center center no-repeat;
+  background-size: cover;
+}
+
+/*CONTACTS*/
+.contacts.bg {
+  background: url(/assets/design/bg/bg-contact.png) center center no-repeat;
+  background-size: cover;
+}
+
+/*SCHEDULE DEMO*/
+.schedule.demo {
+  background: url(/assets/design/bg/bg-schedule-demo.png) center center no-repeat;
+  background-size: cover;
+}
+.combines {
+  background: url(/assets/design/bg/bg-demo.png) center center no-repeat;
+  background-size: cover; 
+}
+
+/*CAREERS*/
+.careers {
+  background: url(/assets/design/bg/careers-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.careers-pills .nav-link {
+    display: block;
+    padding: 0.5rem 2rem;
+    background: none;
+    border-radius: 0;
+    box-shadow: none !important;
+    color: #2B323C;
+    font-size: 150%;
+    border-bottom: 2px solid #d9dadb;
+}
+
+.careers-pills .nav-link.active, 
+.nav-pills .show > .nav-link {
+    color: #2B323C;
+    background-color: transparent;
+  border-color: #97cbcb;
+}
+
+
+/*IMAGES*/
+
+.rounded-5 {
+   border-radius: 13px !important;
+}
+
+
+/*Search*/
+.bcs-host-div {
+  background-color: transparent !important;
+}
+
+.bcs-result {
+  background: #fff !important;
+  margin-bottom: 20px !important;
+  box-shadow: 0 4px 17px rgb(0 0 0 / 5%);
+
+}
+
+#bcs-results-div {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+.bcs-container-searchbox {
+  background-color: #fff !important;
+}
+
+.bcs-searchbox {
+  max-height: 35px !important;
+}
+
+.bcs-result cite {
+    color: #355f59 !important;
+}
+
+.header-search {
+  border-radius: 50px;
+}
+
+.header-search .form-control {
+  padding: 1rem 1rem 1rem 2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #fff;
+  border: none;
+  border-radius: 50px 0 0 50px; 
+  background: rgb(255 255 255 / 15%);
+}
+
+.header-search .btn-light {
+  background-color: transparent;
+}
+
+.header-search .btn {
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 17px 25px;
+  box-shadow: none;
+  border: none;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  line-height: 1;
+  background: #212529;
+  text-align: center;
+}
+
+
+.header-search .form-control {
+  font-size: 18px;
+}
+
+.header-search .form-control:focus {
+  color: #fff;
+  outline: 0;
+  box-shadow: none;
+}
+
+.bcs-container-searchbox {
+  display: none !important;
+}
+
+
