@@ -522,32 +522,74 @@ a.link-white:hover {
 
 /*LAYOUT*/
 
+.hero {
+  position: relative;
+  box-sizing: border-box;
+  height: calc(100vw * 0.5625);
+  min-height: 600px;
+  padding: 20px;
+  
+  display: flex;
+  align-items: center;
+}
+
+.hero h2 {
+  font-size: 4em;
+}
+
+.hero h2,
+.hero p {
+  color: white;
+  width: calc(100vw - 40px);
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .hero h2,
+  .hero p {
+    max-width: 80%;
+    text-align: left;
+  }
+}
 
 .hero-full-h {
-    min-height: 100vh;
-    position: relative;
-  }
+  min-height: 100vh;
+  position: relative;
+}
 
-  .hero-full-h .layer,
-  .hero-half-h .layer{
-    z-index: 4;
-    width: 100%;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
+.hero-full-h .layer,
+.hero-half-h .layer,
+.hero-hd-h .layer,
+.hero-large-h .layer {
+  z-index: 4;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
   
-  .hero-half-h {
-    height: 50vh;
-    position: relative;
-  }
+.hero-half-h {
+  height: 50vh;
+  position: relative;
+}
+
+.hero-hd-h {
+  height: calc(100vw * 0.5625);
+  min-height: 600px;
+  position: relative;
+}
+
+.hero-large-h {
+  height: 70vh;
+  position: relative;
+}
  
 .hero-small-h{
-    height: 30vh;
-    position: relative;
+  height: 30vh;
+  position: relative;
 }
 
 
@@ -770,6 +812,11 @@ a.resources-nav-item  {
 .team {
   background: url(/assets/design/bg/modern-heros-people.png) center center no-repeat;
   background-size: cover;
+}
+
+.hero.team {
+  align-items: flex-start;
+  padding-top: max(120px, 12vw);
 }
 
 /*CONTACTS*/

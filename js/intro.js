@@ -38,7 +38,7 @@ function playCircle() {
   let progress = 0;
   let start = Date.now();
   function loop() {
-    let elapsed = (Date.now() - start) / 2000;
+    let elapsed = (Date.now() - start) / 4000;
     let p = Math.min(1, Math.max(0, elapsed));
     drawCircle(p);
     if(elapsed < 1) {
