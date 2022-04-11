@@ -568,7 +568,7 @@ a.link-white:hover {
 @media (min-width: 1200px) {
   .hero h2,
   .hero p {
-    max-width: 80%;
+    max-width: 70%;
   }
 }
 
@@ -674,11 +674,69 @@ a.link-white:hover {
 
 /*SOLUTIONS*/
 
-.solutions {
-  background: url(/assets/design/bg/data-pattern-bg.jpg) center center no-repeat;
-  background-size: cover;
+.hero.solutions {
+  position: relative;
+  /*background: url(/assets/design/bg/data-pattern-bg.jpg) center center no-repeat;*/
+  /*background-size: cover;*/
 }
 
+.solutions img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0;
+}
+
+@keyframes solutions-slide {
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.solutions .bg1 {
+  animation-name: solutions-slide;
+  animation-duration: 16s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.solutions .bg2 {
+  animation-name: solutions-slide;
+  animation-duration: 16s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.solutions .bg3 {
+  animation-name: solutions-slide;
+  animation-duration: 16s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+}
+
+.solutions .bg4 {
+  animation-name: solutions-slide;
+  animation-duration: 16s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+}
 
 
 .solutions.retail {

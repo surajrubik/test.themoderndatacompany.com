@@ -14,8 +14,6 @@
 }
 
 #dataos-layers {
-  width: min(95vw, 95vh);
-  height: min(95vw, 95vh);
   margin: 0 auto;
   position: relative;
 }
@@ -31,29 +29,50 @@
   }
 }
 
-#dataos-layers #graphic {
+#dataos-layers .dataos-graphic {
   position: absolute;
-  left: 0;
   top: 0;
   z-index: 5;
   width: 100%;
   height: 100%;
   transform-origin: center center;
   animation: spin 90s linear infinite;
+  transition: all 600ms ease-in-out;
+  opacity: 0;
 }
+
+#dataos-layers.visible .dataos-graphic {
+  opacity: 1;
+}
+
+#dataos-layers #graphic-layer2 {
+  transition-delay: 1000ms;
+}
+
+#dataos-layers #graphic-layer3 {
+  transition-delay: 2000ms;
+}
+
+#dataos-layers #panels {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 
 #dataos-layers h1 {
   font-size: 80px;
   font-family: 'Inter', sans-serif;
   color: #2b333d;
-  position: relative;
   z-index: 10;
 }
 
 #dataos-layers .panel {
   position: relative;
   z-index: 20;
-  padding: 24px;
+  padding: 24px 24px 24px 56px;
   margin: 0 8px 16px;
   border-radius: 24px;
   background-color: white;
@@ -66,12 +85,12 @@
 
 #dataos-layers .panel h3 {
   font-weight: bold;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 16px;
+  line-height: 18px;
   font-family: 'Inter', sans-serif;
   color: #2b333d;
   padding: 0;
-  margin: 0 0 12px;
+  margin: 0 0 16px;
 }
 
 #dataos-layers .panel p {
@@ -86,8 +105,8 @@
 #dataos-layers #data-panel:after {
   content: "";
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 18px;
+  left: 16px;
   width: 28px;
   height: 28px;
   border-radius: 14px;
@@ -97,8 +116,8 @@
 #dataos-layers #knowledge-panel:after {
   content: "";
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 18px;
+  left: 16px;
   width: 28px;
   height: 28px;
   border-radius: 14px;
@@ -108,8 +127,8 @@
 #dataos-layers #activation-panel:after {
   content: "";
   position: absolute;
-  top: 24px;
-  right: 24px;
+  top: 18px;
+  left: 16px;
   width: 28px;
   height: 28px;
   border-radius: 14px;
@@ -120,33 +139,44 @@
 @media (orientation: landscape) {
 
   #dataos-layers {
+    width: 60vw;
+    height: 60vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
-  #dataos-layers .panel {
+  #dataos-layers h1 {
+    position: relative;
+    left: -8vw;
+  }
+
+  #dataos-layers #panels {
     position: absolute;
+    top: 0;
+    right: -8vw;
+    bottom: 0;
+  }
+
+  #dataos-layers .dataos-graphic {
+    left: -8vw;
+  }
+
+  #dataos-layers .panel {
     width: 320px;
   }
 
   #dataos-layers #data-panel {
-    top: 5%;
-    right: 10%;
     transition-delay: 0;
   }
 
-  #dataos-layers #knowledge-panel {
-    bottom: 5%;
-    right: -5%;
-    transition-delay: 200ms;
+  #dataos-layers #activation-panel {
+    transition-delay: 1000ms;
   }
 
-  #dataos-layers #activation-panel {
-    top: 50%;
-    left: -10%;
-    transition-delay: 400ms;
+  #dataos-layers #knowledge-panel {
+    transition-delay: 2000ms;
   }
 
   #dataos-layers:not(.visible) #data-panel {
@@ -155,12 +185,12 @@
   }
 
   #dataos-layers:not(.visible) #knowledge-panel {
-    transform: translate3d(0, 40px, 0);
+    transform: translate3d(40px, 0, 0);
     opacity: 0;
   }
 
   #dataos-layers:not(.visible) #activation-panel {
-    transform: translate3d(0, -40px, 0);
+    transform: translate3d(40px, 0, 0);
     opacity: 0;
   }
 }

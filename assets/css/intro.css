@@ -34,6 +34,12 @@
   font-weight: lighter;
 }
 
+#intro h1 .copy {
+  position: relative;
+  top: -3em;
+  font-size: .2em;
+}
+
 #intro h2 {
   position: absolute;
   top: calc(50vh - 144px);
