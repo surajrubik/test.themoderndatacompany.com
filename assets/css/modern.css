@@ -8,6 +8,10 @@ body {
   line-height: 1.7;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 
 /*HEADER*/
 
@@ -547,6 +551,7 @@ a.link-white:hover {
   box-sizing: border-box;
   height: calc(100vw * 0.5625);
   min-height: 600px;
+  max-height: 800px;
   padding: 30px;
   
   display: flex;
@@ -554,12 +559,13 @@ a.link-white:hover {
 }
 
 .hero h2 {
-  font-size: 3.8em;
+  font-size: 3rem;
   letter-spacing: -3px;
 }
 
 .hero h2,
 .hero p {
+  z-index: 10;
   color: white;
   width: calc(100vw - 160px);
   padding-left: 50px;
@@ -568,7 +574,7 @@ a.link-white:hover {
 @media (min-width: 1200px) {
   .hero h2,
   .hero p {
-    max-width: 70%;
+    max-width: 50%;
   }
 }
 
@@ -578,7 +584,6 @@ a.link-white:hover {
 }
 
 .hero-full-h .layer,
-.hero-half-h .layer,
 .hero-hd-h .layer,
 .hero-large-h .layer {
   z-index: 4;
@@ -592,8 +597,13 @@ a.link-white:hover {
 }
   
 .hero-half-h {
-  height: 50vh;
+  padding: 10vh 0;
+  min-height: 50vh;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-hd-h {
@@ -624,13 +634,13 @@ a.link-white:hover {
 /*DATAOS PRODUCT PAGE*/
 
 .dataos {
-  background: url(/assets/design/bg/home-slide03-bg.jpg) center center no-repeat;
-  background-size: cover;
+  /*background: url(/assets/design/bg/home-slide03-bg.jpg) center center no-repeat;*/
+  /*background-size: cover;*/
 }
 
 .hero.dataos {
-  align-items: flex-start;
-  padding-top: max(120px, 12vw);
+  /*align-items: flex-start;*/
+  /*padding-top: max(120px, 12vw);*/
 }
 
 .dataos .layer {
@@ -854,17 +864,15 @@ a.resources-nav-item  {
 }
 
 .dark-bg-overlay{
-  
-    z-index: 2;
-    width: 100%;
-    left: 0;
-    margin: 0;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    background: #000;
-    opacity:0.5;
-    
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background: #000;
+  opacity:0.5;
 }
 
 
@@ -922,6 +930,10 @@ a.resources-nav-item  {
 .careers {
   background: url(/assets/design/bg/careers-bg.jpg) center center no-repeat;
   background-size: cover;
+}
+
+.hero.careers {
+  padding-left: 60px;
 }
 
 .careers-pills .nav-link {
@@ -1033,3 +1045,10 @@ a.resources-nav-item  {
 }
 
 
+
+.blog-hero,
+.solutions-hero {
+  height: calc(100vw * 0.5625);
+  min-height: 600px;
+  max-height: 800px;
+}

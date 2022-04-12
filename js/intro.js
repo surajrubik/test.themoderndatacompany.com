@@ -35,6 +35,7 @@ function drawCircle(p) {
 }
 
 function playCircle() {
+  document.getElementById("circle-video-video").play();
   let progress = 0;
   let start = Date.now();
   function loop() {

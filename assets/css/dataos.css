@@ -1,3 +1,113 @@
+
+
+/* Hero */
+
+
+
+.hero.dataos {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #2d323f;
+  padding-right: 80px;
+}
+
+
+
+.hero.dataos .title {
+}
+
+.hero.dataos .circle {
+  display: none;
+  width: 600px;
+  height: 600px;
+  flex: 0 0 600px;
+  background-image: url(/img/circle.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.hero.dataos .slide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero.dataos .circle video {
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+}
+
+.hero.dataos .circle h3 {
+  color: white;
+  width: 300px;
+}
+
+@media (min-width: 1200px) {
+  .hero.dataos .circle {
+    display: flex;
+  }
+}
+
+.hero.dataos .slide {
+  position: absolute;
+  top: 225px;
+  opacity: 0;
+}
+
+@keyframes hero-dataos-slide {
+  from {
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.hero.dataos .slide1 {
+  animation-name: hero-dataos-slide;
+  animation-duration: 16s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+}
+
+.hero.dataos .slide2 {
+  animation-name: hero-dataos-slide;
+  animation-duration: 16s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+.hero.dataos .slide3 {
+  animation-name: hero-dataos-slide;
+  animation-duration: 16s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+}
+
+.hero.dataos .slide4 {
+  animation-name: hero-dataos-slide;
+  animation-duration: 16s;
+  animation-delay: 12s;
+  animation-iteration-count: infinite;
+}
+
+
+/* Layers Graphic */
+
+
 #Difference .rule {
   position: relative;
   margin: 16px 0 24px;
