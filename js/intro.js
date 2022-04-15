@@ -75,6 +75,11 @@ function setAnimationProgress() {
   }
   
   lastProgress = progress;
+
+  // activate the header bar if animation is done.
+
+  console.log(progress, document.getElementById("header"))
+  document.getElementById("header").classList.toggle('active', progress >= 1);
 }
 
 window.addEventListener('scroll', setAnimationProgress);
