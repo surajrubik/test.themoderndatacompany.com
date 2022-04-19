@@ -15,7 +15,8 @@ body {
 
 /*HEADER*/
 
-.header {
+.header,
+.home-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -28,7 +29,8 @@ body {
     line-height: 40px;
 }
 
-.header.active {
+.header.active,
+.home-header.active {
     background: #fff;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
@@ -89,14 +91,16 @@ body {
   border-color:rgb(255 255 255 / 23%);
 }
 
-.header.active .header-nav .btn-light {
+.header.active .header-nav .btn-light,
+.home-header.active .header-nav .btn-light {
   background: #DCDEE2;
   height: 45px;
   padding: 12px 24px;
   font-size: 13px;
 }
 
-.header.active .header-nav .btn-menu {
+.header.active .header-nav .btn-menu,
+.home-header.active .header-nav .btn-menu {
   background: #DCDEE2;
   height: 45px;
   padding: 12px 0;
@@ -105,30 +109,36 @@ body {
 }
 
 .header.active .header-nav .btn-light:hover,
-.header.active .header-nav .btn-menu:hover {
+.header.active .header-nav .btn-menu:hover,
+.home-header.active .header-nav .btn-light:hover,
+.home-header.active .header-nav .btn-menu:hover {
   background: #fff;
   border-color: #DCDEE2;
   color: #2B323C;
 }
 
-.header .logo #ModernIcon {
+.header .logo #ModernIcon,
+.home-header .logo #ModernIcon {
   opacity: 1;
   transition: all .3s ease-in-out;
   display: block;
   height: 42px;
   width: auto;
 }
+.home-header .logo #ModernLogo,
 .header .logo #ModernLogo {
   opacity: 0;
   transition: all .3s ease-in-out;
   display: none;
 }
 
+.home-header.active .logo #ModernIcon,
 .header.active .logo #ModernIcon {
   opacity: 0;
   display: none;
 }
 
+.home-header.active .logo #ModernLogo,
 .header.active .logo #ModernLogo {
   opacity: 1;
   display: block;
@@ -142,6 +152,7 @@ body {
 
 
 @media only screen and (min-width: 891px) {
+  .home-header.active .onpage-nav.nav,
   .header.active .onpage-nav.nav {
     display: flex;
   }
@@ -153,18 +164,22 @@ body {
 }
 
 #OnPageNav .nav-link,
-.header.active .onpage-nav.nav .nav-link {
+.header.active .onpage-nav.nav .nav-link,
+.home-header.active .onpage-nav.nav .nav-link {
   color: #80848a;
 }
 
 #OnPageNav .nav-link:hover,
 #OnPageNav .active,
 .header.active .onpage-nav.nav .nav-link:hover,
-.header.active .onpage-nav.nav .active{
+.header.active .onpage-nav.nav .active,
+.home-header.active .onpage-nav.nav .nav-link:hover,
+.home-header.active .onpage-nav.nav .active{
   color: #000;
 }
 
 #OnPageNav .active,
+.home-header.active .onpage-nav.nav .active,
 .header.active .onpage-nav.nav .active {
   font-weight: 600;
 }
@@ -559,21 +574,28 @@ a.link-white:hover {
 }
 
 .hero h2 {
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: -1px;
+}
+
+@media (min-width: 1200px) {
+  .hero h2 {
+    font-size: 3em;
+  }
 }
 
 .hero h2,
 .hero p {
   z-index: 10;
   color: white;
-  width: calc(100vw - 160px);
+  width: 80vw;
   padding-left: 50px;
 }
 
 @media (min-width: 1200px) {
   .hero h2,
   .hero p {
+    width: calc(100vw - 160px);
     max-width: 50%;
   }
 }
@@ -620,6 +642,10 @@ a.link-white:hover {
 .hero-small-h{
   height: 30vh;
   position: relative;
+}
+
+.hero-title-h {
+  padding: 120px 0 28px;
 }
 
 

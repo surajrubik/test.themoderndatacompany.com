@@ -250,8 +250,6 @@
 
     <img id="dataos-graphic" class="animated shape" src="img/dataos.svg" alt=""/>
 
-
-
     <div class="animated feature" id="feature-1">
       <video playsinline muted autoplay loop width="200" height="200">
         <source src="/assets/media/icon-circles-transparent.webm" type="video/webm"/>
@@ -288,7 +286,6 @@
       <p>Modern composable architecture</p>
     </div>
 
-
     <h1 class="animated" id="think-modern">Think <br/>Modern.</h1>
     <h2 class="animated" id="paradigm-shift">A Paradigm Shift <br/>in Data.</h2>
     <h3 class="animated" id="no-data-movement">No Data <br/>Movement.</h3>
@@ -297,7 +294,8 @@
     <h4 class="animated" id="let-outcomes-drive">Let outcomes drive process rather <br/>than process drive outcome.</h4>
     <h3 class="animated" id="transform-your-tradition">Transform your Traditional <br/>Data Enterprise into...</h3>
     <h5 class="animated" id="the-modern-programmable">The Modern <br/>Progammable <br/>Enterprise</h5>
-    <h5 class="animated" id="introducing">Introducing the <br/>World’s First <br/>Data Operating <br/>System</h5>
+    <h1 class="animated" id="introducing-title">Introducing</h1>
+    <h5 class="animated" id="introducing">The World’s First <br/>Data Operating System</h5>
     <h1 class="animated" id="dataos">DataOS<sup class="copy">&reg;</sup></h1>
     <h3 class="animated" id="the-most-effective">The most effective path from data to decisions.</h3>
     <nav class="animated" id="learn-more">
@@ -632,10 +630,10 @@
 <script>
 $(window).on("scroll", function() {
   if ($(window).scrollTop() > 40) {
-    $(".header").addClass("active");
+    $(".header:not(.fixed)").addClass("active");
   } else {
     //remove the background property so it comes transparent again (defined in your css)
-    $(".header").removeClass("active");
+    $(".header:not(.fixed)").removeClass("active");
   }
 });
   

@@ -767,10 +767,10 @@ The complete data set, well analyzed, and clearly presented, must be available 
 <script>
 $(window).on("scroll", function() {
   if ($(window).scrollTop() > 40) {
-    $(".header").addClass("active");
+    $(".header:not(.fixed)").addClass("active");
   } else {
     //remove the background property so it comes transparent again (defined in your css)
-    $(".header").removeClass("active");
+    $(".header:not(.fixed)").removeClass("active");
   }
 });
   

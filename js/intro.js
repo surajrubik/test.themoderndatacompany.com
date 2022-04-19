@@ -1,3 +1,4 @@
+let intro = document.getElementById('intro')
 let els = document.getElementsByClassName('animated');
 let labels = document.getElementsByClassName('label');
 
@@ -52,7 +53,7 @@ function playCircle() {
 let lastProgress = 0;
 function setAnimationProgress() {
   let top = document.documentElement.scrollTop;
-  let progress = Math.min(1, top / (window.innerHeight * 9));
+  let progress = Math.min(1, top / (intro.scrollHeight - window.innerHeight));
   
   for(let el of els) {
     el.style.animationDelay = `-${progress}s`;
@@ -78,7 +79,6 @@ function setAnimationProgress() {
 
   // activate the header bar if animation is done.
 
-  console.log(progress, document.getElementById("header"))
   document.getElementById("header").classList.toggle('active', progress >= 1);
 }
 
