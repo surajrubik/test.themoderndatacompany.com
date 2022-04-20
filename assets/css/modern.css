@@ -9,6 +9,7 @@ body {
 }
 
 body {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -20,6 +21,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
+    box-sizing: border-box;
     width: 100%;
     padding: 20px;
     z-index: 1000;
@@ -415,6 +417,7 @@ h1.h2 {
 
 
 .lead {
+  line-height: 1.1em;
   font-weight: 400;
 }
 

@@ -1,6 +1,11 @@
 let intro = document.getElementById('intro')
 let els = document.getElementsByClassName('animated');
-let labels = document.getElementsByClassName('label');
+let labels = [
+  document.getElementById('label-1'),
+  document.getElementById('label-2'),
+  document.getElementById('label-3'),
+  document.getElementById('label-4'),
+];
 
 const SVG_ELEMENT = document.getElementById("label-circle");
 const PATH_ELEMENT = document.getElementById("label-circle-path");
@@ -55,6 +60,7 @@ function setAnimationProgress() {
   let top = document.documentElement.scrollTop;
   let progress = Math.min(1, top / (intro.scrollHeight - window.innerHeight));
   
+  console.log(progress)
   for(let el of els) {
     el.style.animationDelay = `-${progress}s`;
   }

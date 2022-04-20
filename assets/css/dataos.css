@@ -143,6 +143,11 @@
   border-top: 1px solid #717981;
 }
 
+#Layers,
+#Features {
+  overflow: hidden;
+}
+
 #dataos-layers {
   margin: 0 auto;
   position: relative;
